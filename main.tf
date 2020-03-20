@@ -45,13 +45,13 @@ resource "ibm_iam_access_group_policy" "policy" {
              resource_group_id = "${data.ibm_resource_group.group.id}"
          }]
     }]
-    classic_infra_roles = {
-      permissions = [
-        "PORT_CONTROL", 
-        "DATACENTER_ACCESS"
-      ]
-      permission_set = "basicuser"
-    }
+    #classic_infra_roles = {
+    #  permissions = [
+    #    "PORT_CONTROL", 
+    #    "DATACENTER_ACCESS"
+    #  ]
+    #  permission_set = "basicuser"
+    #}
     cloud_foundry_roles = [{
       organization_guid = "${data.ibm_org.org.id}"
       org_roles = ["Manager", "Auditor"]
