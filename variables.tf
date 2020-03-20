@@ -1,6 +1,8 @@
 variable "api_key" {
 }
 
+variable "region" {
+}
 variable "user1" {
 default = "hkantare@in.ibm.com"
 }
