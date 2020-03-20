@@ -15,7 +15,7 @@ resource "ibm_iam_access_group" "accgrp" {
 }
 
 data "ibm_resource_group" "group" {
-  name = "default"
+  name = "Default"
 }
 
 resource "ibm_iam_access_group_policy" "policy" {
