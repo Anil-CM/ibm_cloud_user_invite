@@ -1,7 +1,18 @@
-variable "user1" {}
+variable "api_key" {
+}
 
-variable "user2" {}
+variable "user1" {
+default = "hkantare@in.ibm.com"
+}
 
-variable "org" {}
+variable "user2" {
+default = "arun10mallakkanavar@gmail.com"
+}
 
-variable "space" {}
+variable "org" {
+default = "acm06"
+}
+
+variable "space" {
+default = "myspace"
+}
